@@ -18,8 +18,6 @@ knn = SVC(kernel='rbf')
 knn.fit(x_train, y_train)
 
 y_pred = knn.predict(x_test)
-print(y_pred)
-print(y_test)
 
 #CONFUSION MATRIX
 from sklearn.metrics import confusion_matrix
