@@ -14,10 +14,10 @@ from sklearn.cross_validation import train_test_split #dataseti test ve train ol
 x_train, x_test, y_train, y_test = train_test_split(x_scaled, y, test_size=0.33, random_state=42) 
 
 from sklearn.svm import SVC
-knn = SVC(kernel='rbf')
-knn.fit(x_train, y_train)
+svm = SVC(kernel='rbf')
+svm.fit(x_train, y_train)
 
-y_pred = knn.predict(x_test)
+y_pred = svm.predict(x_test)
 
 #CONFUSION MATRIX
 from sklearn.metrics import confusion_matrix
