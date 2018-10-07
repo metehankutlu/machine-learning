@@ -1,8 +1,5 @@
-import pandas as pd
-import numpy as np
 from sklearn import datasets
 from sklearn.metrics import confusion_matrix,accuracy_score,f1_score,precision_score,recall_score
-from itertools import product
 iris = datasets.load_iris()
 
 x = iris["data"]
